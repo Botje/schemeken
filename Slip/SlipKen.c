@@ -284,5 +284,5 @@ int64_t ken_handler(void *msg, int32_t len, kenid_t sender) {
     }
   }
   Slip_Print(Prompt_rawstring);
-  return -1;
+  return ken_current_time() + 10000000;
 }
